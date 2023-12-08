@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>YE$TORE</title>
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" href="public/css/style.css">
+    <link rel="icon" href="public/img/logo.svg" type="image/svg">
+</head>
+<body>
+    <!-- NAV DESKTOP -->
+    <nav class="navDesktop">
+        <div class="navDesktop__logoBox">
+            <a href="index.html" class="navDesktop__logo">YE$TORE.</a>
+        </div>
+        <div class="navDesktop__linkBox">
+            <a href="#calzados" class="navDesktop__link">Calzados</a>
+            <a href="#hombre" class="navDesktop__link">Hombre</a>
+            <a href="#mujer" class="navDesktop__link">Mujer</a>
+            <a href="#accesorios" class="navDesktop__link">Accesorios</a>
+        </div>
+        <div class="navDesktop__iconBox">
+            <a href="public/views/carrito.html" class="navDesktop__iconLink">
+                <img src="public/img/carrito.svg" alt="" height="28px" width="28px" class="navDesktop__iconImg">
+            </a>
+            <a href="public/views/cuenta.html" class="navDesktop__iconLink">
+                <img src="public/img/cuenta.svg" alt="" height="28px" width="28px" class="navDesktop__iconImg">
+            </a>
+        </div>
+    </nav>
+    <!-- NAV MOBILE -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand navDesktop__logo" href="index.html">YE$TORE</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#calzados">Calzados</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#hombre">Hombre</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#mujer">Mujer</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#accesorios">Accesorios</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="public/views/carrito.html">Carrito</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="public/views/cuenta.html">Cuenta</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- HEADER DESKTOP -->
+    <header class="headerDesktop" id="quienes-somos">
+        <img src="public/img/header-index.webp" alt="Zapatillas Yeezy Boost 700 Utility Black" class="headerDesktop__img">
+        <section class="headerDesktop__textBox">
+            <h1 class="headerDesktop__title">Somos <span class="headerDesktop__title--logo">YE$TORE</span></h1>
+            <p class="headerDesktop__p">Tu estilo es único, y queremos ser tu destino para encontrar piezas que lo celebren. ¡Prepárate para vestirte con confianza y expresar tu identidad a través de la moda en YE$TORE!</p>
+        </section>
+    </header>
+    <!-- MAIN DESKTOP -->
+    <main class="main">
+        <section id="carouselExample" class="carousel slide">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <div class="carousel__textBox">
+                        <p class="carousel__p">BUSCA TU ESTILO ACÁ</p>
+                        <a href="#productos" class="carousel__link">Ver productos</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel__textBox">
+                        <p class="carousel__p">OPCIONES DE PAGO</p>
+                        <a href="#" class="carousel__link">Ver opciones de pago</a>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="carousel__textBox">
+                        <p class="carousel__p">ENVÍOS A TODO EL PAÍS.</p>
+                        <a href="#" class="carousel__link">Ver más</a>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+        <!-- NUESTROS PRODUCTOS -->
+        <section class="homeCards" id="productos">
+            <div class="homeCards__textBox">
+                <h2 class="homeCards__title">NUESTROS PRODUCTOS</h2>
+                <a href="#" class="homeCards__link">Ver todos los productos</a>
+            </div>
+            <div class="homeCards__cards">
+                <article class="homeCards__cardBox">
+                    <a href="public/views/yeezy-boost-700-mauve.html" class="homeCards__cardLink">
+                        <img src="public/img/yeezy-boost-700-mauve-1.webp" alt="Zapatillas Yeezy Boost 700 Mauve" class="homeCards__cardImg">
+                    </a>
+                    <div class="homeCards__cardTextBox">
+                        <a href="public/views/yeezy-boost-700-mauve.html" class="homeCards__cardTitle">YEEZY BOOST 700 MAUVE</a>
+                        <p class="homeCards__cardPrice">$149.600</p>
+                    </div>
+                </article>
+    
+                <article class="homeCards__cardBox">
+                    <a href="#" class="homeCards__cardLink homeCards__cardLink--white">
+                        <img src="public/img/nocta-champions-league-1.webp" alt="Buzo Nocta Champions League" class="homeCards__cardImg">
+                    </a>
+                    <div class="homeCards__cardTextBox">
+                        <a href="#" class="homeCards__cardTitle">BUZO NOCTA CHAMPIONS LEAGUE</a>
+                        <p class="homeCards__cardPrice">$120.900</p>
+                    </div>
+                </article>
+    
+                <article class="homeCards__cardBox">
+                    <a href="#" class="homeCards__cardLink">
+                        <img src="public/img/nike-everyday-lightweight.webp" alt="Medias Nike Everyday Lightweight" class="homeCards__cardImg">
+                    </a>
+                    <div class="homeCards__cardTextBox">
+                        <a href="#" class="homeCards__cardTitle">MEDIAS NIKE EVERYDAY LIGHTWEIGHT</a>
+                        <p class="homeCards__cardPrice">$8.999</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- COMPRAR POR GÉNERO -->
+        <section class="homeGender" id="mujer">
+            <div class="homeGender__textBox" id="hombre">
+                <h2 class="homeGender__title">COMPRAR POR GÉNERO</h2>
+            </div>
+            <div class="homeGender__cards">
+                <article class="homeGender__cardBox">
+                    <a href="#" class="homeGender__cardLink">
+                        <img src="public/img/main-gender-index-mujer.webp" alt="Mujer modelando" class="homeGender__cardImg">
+                    </a>
+                    <div class="homeGender__cardTextBox">
+                        <a href="#" class="homeGender__cardTitle">MUJER</a>
+                    </div>
+                </article>
+
+                <article class="homeGender__cardBox">
+                    <a href="#" class="homeGender__cardLink">
+                        <img src="public/img/main-gender-index-hombre.webp" alt="Hombre modelando" class="homeGender__cardImg">
+                    </a>
+                    <div class="homeGender__cardTextBox">
+                        <a href="#" class="homeGender__cardTitle">HOMBRE</a>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- CALZADOS -->
+        <section class="homeCards" id="calzados">
+            <div class="homeCards__textBox">
+                <h3 class="homeCards__title">CALZADOS</h3>
+                <a href="#" class="homeCards__link">Ver todos los productos</a>
+            </div>
+            <div class="homeCards__cards">
+                <article class="homeCards__cardBox">
+                    <a href="#" class="homeCards__cardLink">
+                        <img src="public/img/adidas-ozelia.webp" alt="Zapatillas Adidas OZELIA" class="homeCards__cardImg">
+                    </a>
+                    <div class="homeCards__cardTextBox">
+                        <a href="#" class="homeCards__cardTitle">ADIDAS OZELIA</a>
+                        <p class="homeCards__cardPrice">$118.999</p>
+                    </div>
+                </article>
+    
+                <article class="homeCards__cardBox">
+                    <a href="#" class="homeCards__cardLink">
+                        <img src="public/img/nike-air-huarache-runner.webp" alt="Zapatillas Nike Huarache Runner" class="homeCards__cardImg">
+                    </a>
+                    <div class="homeCards__cardTextBox">
+                        <a href="#" class="homeCards__cardTitle">NIKE AIR HUARACHE RUNNER</a>
+                        <p class="homeCards__cardPrice">$149.999</p>
+                    </div>
+                </article>
+    
+                <article class="homeCards__cardBox">
+                    <a href="public/views/yeezy-boost-700-mauve.html" class="homeCards__cardLink">
+                        <img src="public/img/yeezy-boost-700-mauve-1.webp" alt="Zapatillas Yeezy Boost 700 Mauve" class="homeCards__cardImg">
+                    </a>
+                    <div class="homeCards__cardTextBox">
+                        <a href="public/views/yeezy-boost-700-mauve.html" class="homeCards__cardTitle">YEEZY BOOST 700 MAUVE</a>
+                        <p class="homeCards__cardPrice">$144.999</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- ACCESORIOS -->
+        <section class="homeCards" id="accesorios">
+            <div class="homeCards__textBox">
+                <h3 class="homeCards__title">ACCESORIOS</h3>
+                <a href="#" class="homeCards__link">Ver todos los productos</a>
+            </div>
+            <div class="homeCards__cards">
+                <article class="homeCards__cardBox">
+                    <a href="#" class="homeCards__cardLink homeCards__cardLink--white">
+                        <img src="public/img/nike-everyday-lightweight.webp" alt="Medias Nike Everyday Lightweight" class="homeCards__cardImg">
+                    </a>
+                    <div class="homeCards__cardTextBox">
+                        <a href="#" class="homeCards__cardTitle">MEDIAS NIKE EVERYDAY LIGHTWEIGHT</a>
+                        <p class="homeCards__cardPrice">$8.999</p>
+                    </div>
+                </article>
+    
+                <article class="homeCards__cardBox">
+                    <a href="#" class="homeCards__cardLink homeCards__cardLink--white">
+                        <img src="public/img/baloncesto-sbl-nocta-elite.webp" alt="Baloncesto SBL Nocta Elite" class="homeCards__cardImg">
+                    </a>
+                    <div class="homeCards__cardTextBox">
+                        <a href="#" class="homeCards__cardTitle">BALONCESTO SBL NOCTA ELITE</a>
+                        <p class="homeCards__cardPrice">$149.999</p>
+                    </div>
+                </article>
+    
+                <article class="homeCards__cardBox">
+                    <a href="#" class="homeCards__cardLink">
+                        <img src="public/img/mochila-adidas-classic-1.webp" alt="Mochila Adidas Classic" class="homeCards__cardImg">
+                    </a>
+                    <div class="homeCards__cardTextBox">
+                        <a href="#" class="homeCards__cardTitle">MOCHILA ADIDAS CLASSIC</a>
+                        <p class="homeCards__cardPrice">$25.999</p>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <!-- RELLENO -->
+        <div class="stuffed"></div>
+    </main>
+    <!-- FOOTER -->
+    <footer class="footerDesktop">
+        <section class="footerDesktop__section1">
+            <nav class="footerDesktop__textBox1">
+                <h2 class="footerDesktop__title1">TIENDA</h2>
+                <ul class="footerDesktop__list1">
+                    <li>
+                        <a href="#calzados" class="footerDesktop__link1">Calzados</a>
+                    </li>
+                    <li>
+                        <a href="#hombre" class="footerDesktop__link1">Hombre</a>
+                    </li>
+                    <li>
+                        <a href="#mujer" class="footerDesktop__link1">Mujer</a>
+                    </li>
+                    <li>
+                        <a href="#accesorios" class="footerDesktop__link1">Accesorios</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="footerDesktop__textBox2">
+                <h2 class="footerDesktop__title2">AYUDA</h2>
+                <ul class="footerDesktop__list2">
+                    <li>
+                        <a href="#quienes-somos" class="footerDesktop__link2">¿Quiénes somos?</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footerDesktop__link2">Opciones de pago</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footerDesktop__link2">Envíos</a>
+                    </li>
+                    <li>
+                        <a href="#" class="footerDesktop__link2">Cambios y devoluciones</a>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="footerDesktop__textBox3">
+                <h2 class="footerDesktop__title3">SEGUINOS</h2>
+                <div class="footerDesktop__iconBox">
+                    <a href="https://www.instagram.com/" target="_blank" class="footerDesktop__iconLink">
+                        <img src="public/img/instagram.svg" alt="Instagram" class="footerDesktop__iconImg" height="24px" width="24px">
+                    </a>
+                    <a href="https://twitter.com/" target="_blank" class="footerDesktop__iconLink">
+                        <img src="public/img/x.svg" alt="X" class="footerDesktop__iconImg" height="24px" width="24px">
+                    </a>
+                    <a href="https://www.facebook.com/" target="_blank" class="footerDesktop__iconLink">
+                        <img src="public/img/facebook.svg" alt="Facebook" class="footerDesktop__iconImg" height="24px" width="24px">
+                    </a>
+                </div>
+            </nav>
+        </section>
+        <section class="footerDesktop__section2">
+            <p class="footerDesktop__p">&copy; 2023 YE$TORE</p>
+        </section>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>

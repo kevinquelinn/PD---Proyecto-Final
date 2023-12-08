@@ -1,0 +1,980 @@
+/* FUENTES */
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Poppins:ital,wght@0,300;0,400;0,500;0,700;1,700&display=swap');
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    background-color: #161616;
+    color: white;
+    line-height: normal;
+}
+
+/* Lo de abajo lo hice porque Bootstrap modificaba algunos de mis estilos ya establecidos*/
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+    line-height: normal;
+}
+
+a {
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+
+ol, ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/* ESTILOS DEL NAV */
+
+.navDesktop {
+    width: 100%;
+    height: 10vh;
+    padding: 0 30px;
+    background-color: #161616;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    border-bottom: 0.5px solid #323232;
+}
+
+.navDesktop__logoBox {
+    flex: 1;
+}
+
+.navDesktop__logo {
+    width: max-content;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.75rem;
+    color: #00C6CF;
+    font-weight: 700;
+    font-style: italic;
+    letter-spacing: 1.5px;
+    text-decoration: underline;
+}
+
+.navDesktop__linkBox {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+}
+
+.navDesktop__link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.navDesktop__link:hover {
+    color: #00C6CF;
+}
+
+.navDesktop__iconBox {
+    flex: 1;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    gap: 1rem;
+}
+
+.navDesktop__iconLink {
+    width: 1.75rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.navDesktop__iconImg {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+.navbar {
+    display: none;
+}
+
+/* ESTILOS DEL HEADER, HOME */
+
+.headerDesktop {
+    width: 100%;
+    height: 50vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.headerDesktop__img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    filter: blur(10px);
+}
+
+.headerDesktop__textBox {
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.headerDesktop__title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+}
+
+.headerDesktop__title--logo {
+    color: #00C6CF;
+    font-style: italic;
+    letter-spacing: 1.5px;
+    text-decoration: underline;
+}
+
+.headerDesktop__p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.25rem;
+    font-weight: 400;
+}
+
+/* ESTILOS DEL CARRUSEL, HOME */
+
+.carousel {
+    width: 100%;
+    height: 15vh;
+    background-color: #242424;
+}
+
+.carousel-inner, .carousel-item, .active {
+    height: 100%;
+}
+
+.carousel__textBox {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.carousel__p {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.125rem;
+    font-weight: 400;
+}
+
+.carousel__link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #00C6CF;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+/* ESTILOS DE LAS CARDS, HOME */
+
+.homeCards {
+    width: 95%;
+    height: max-content;
+    margin: 0 auto;
+    border: none;
+}
+
+.homeCards__textBox {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.homeCards__title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.homeCards__link {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #00C6CF;
+    font-weight: 400;
+    text-decoration: underline;
+}
+
+.homeCards__cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.homeCards__cardBox {
+    width: 280px;
+    height: 360px;
+    background-color: #242424;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.homeCards__cardLink {
+    width: 100%;
+    height: 280px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.homeCards__cardLink--white {
+    background-color: white;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.homeCards__cardImg {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.homeCards__cardTextBox {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+}
+
+.homeCards__cardTitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+.homeCards__cardTitle:hover {
+    color: #00C6CF;
+}
+
+.homeCards__cardPrice {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+/* ESTILOS DE COMPRAR POR GÉNERO, INDEX */
+
+.homeGender {
+    width: 95%;
+    height: max-content;
+    margin: 0 auto;
+    border: none;
+}
+
+.homeGender__textBox {
+    width: 100%;
+    height: 15vh;
+    display: flex;
+    align-items: center;
+}
+
+.homeGender__title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.homeGender__cards {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.homeGender__cardBox {
+    width: 400px;
+    height: 480px;
+    background-color: #242424;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 6px;
+}
+
+.homeGender__cardLink {
+    width: 100%;
+    height: 400px;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.homeGender__cardImg {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+}
+
+.homeGender__cardTextBox {
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.homeGender__cardTitle {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.homeGender__cardTitle:hover {
+    color: #00C6CF;
+}
+
+/* RELLENO */
+
+.stuffed {
+    width: 100%;
+    height: 15vh;
+    background-color: #161616;
+}
+
+/* FOOTER */
+
+.footerDesktop {
+    width: 100%;
+    height: 50vh;
+    background-color: #161616;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-top: 0.5px solid #323232;
+}
+
+.footerDesktop__section1 {
+    width: 100%;
+    height: 85%;
+    padding: 0 150px;
+    display: flex;
+    align-items: center;
+    border-bottom: 0.5px solid #323232;
+}
+
+.footerDesktop__textBox1 {
+    flex: 1;
+    height: 8.813rem;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+.footerDesktop__title1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.footerDesktop__list1 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.footerDesktop__link1 {
+    width: max-content;
+    color: #808080;
+}
+
+.footerDesktop__link1:hover, .footerDesktop__link2:hover {
+    color: #00C6CF;
+}
+
+.footerDesktop__textBox2 {
+    flex: 1;
+    height: 8.813rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footerDesktop__title2 {
+    padding-right: 135px;
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.footerDesktop__list2 {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.footerDesktop__link2 {
+    color: #808080;
+}
+
+.footerDesktop__textBox3 {
+    flex: 1;
+    height: 8.813rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 1rem;
+}
+
+.footerDesktop__title3 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.footerDesktop__iconBox {
+    height: 24px;
+    padding-right: 57px;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.footerDesktop__iconLink {
+    width: 24px;
+    height: 100%;
+}
+
+.footerDesktop__iconImg {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+}
+
+.footerDesktop__section2 {
+    width: 100%;
+    height: 15%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.footerDesktop__p {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+/* ESTILOS DEL CARRITO */
+
+.mainCart {
+    width: 100%;
+    height: 80vh;
+    background-color: #161616;
+}
+
+.mainCart__box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.mainCart__title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.mainCart__paragraph1, .mainCart__paragraph2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.mainCart__paragraph2--font {
+    font-size: 1.5rem;
+}
+
+.mainCart__btn {
+    width: 10rem;
+    height: 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: white;
+    font-weight: 500;
+    border: 1px solid #00C6CF;
+    border-radius: 24px;
+}
+
+.mainCart__btn:hover {
+    background-color: #323232;
+}
+
+/* ESTILOS DE LOGIN */
+
+.mainForm {
+    width: 100%;
+    height: 90vh;
+    background-color: #161616;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.mainForm__box {
+    width: 450px;
+    height: 90%;
+    background-color: #161616;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 0.5px solid #00C6CF;
+    border-radius: 6px;
+}
+
+.mainForm__textBox {
+    width: 100%;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    border-bottom: 0.5px solid #00C6CF;
+}
+
+.mainForm__title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.75rem;
+    font-weight: 400;
+}
+
+.mainForm__form {
+    width: 100%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    border-bottom-left-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.mainForm__emailBox, .mainForm__passBox {
+    width: 100%;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+}
+
+.mainForm__inputEmail, .mainForm__inputPass {
+    display: inline-block;
+    width: 70%;
+    height: 100%;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: white;
+    background-color: #161616;
+    border: none;
+    outline: none;
+    border-bottom: 0.5px solid white;
+}
+
+.mainForm__btn {
+    width: 150px;
+    height: 45px;
+    margin: 0 auto;
+    background: none;
+    color: white;
+    background-color: #161616;
+    outline: none;
+    border: 1px solid #00C6CF;
+    border-radius: 24px;
+    font-size: 1rem;
+}
+
+.mainForm__formTextBox {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+    justify-content: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+}
+
+.mainForm__formLink1 {
+    height: 20px;
+}
+
+.mainForm__formLink1:hover {
+    color: #00C6CF;
+}
+
+.mainForm__formP {
+    height: 20px;
+}
+
+.mainForm__formLink2 {
+    color: #00C6CF;
+}
+
+/* ESTULOS DE YEEZY BOOST 700 MAUVE */
+
+.productCard {
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.productCard__carusel {
+    width: 500px;
+    height: 500px;
+    border-radius: 6px;
+}
+
+.productCard__img {
+    display: inline-block;
+    width: 100%;
+    height: auto;
+    border-radius: 6px;
+}
+
+.carousel-indicators [data-bs-target] {
+    background-color: #161616;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #161616;
+}
+
+.productCard__cardBox {
+    width: 500px;
+    height: 500px;
+    background-color: #161616;
+    border: 1px solid #00C6CF;
+    border-radius: 6px;
+}
+
+.productCard__textBox {
+    width: 100%;
+    height: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    border-bottom: 0.5px solid #00C6CF;
+}
+
+.productCard__title {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+
+.productCard__p {
+    padding: 0 60px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    color: #808080;
+    font-weight: 400;
+    text-align: center;
+}
+
+.productCard__p--white {
+    color: white;
+}
+
+.productCard__price {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #00C6CF;
+    font-weight: 700;
+}
+
+.productCard__buy {
+    width: 100%;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.productCard__buyTitleBox {
+    width: 100%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.productCard__buyTitle {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.productCard__form {
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.productCard__formBtn {
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.productCard__btn {
+    width: 250px;
+    height: 45px;
+    background: none;
+    color: white;
+    background-color: #161616;
+    outline: none;
+    border: 1px solid #00C6CF;
+    border-radius: 24px;
+}
+
+/* MEDIA QUERIE */
+
+@media (max-width:992px) {
+
+    .navDesktop {
+        display: none;
+    }
+
+    .navbar {
+        display: flex;
+        min-width: 248px;
+        position: sticky;
+        top: 0;
+        z-index: 100;
+    }
+
+    .headerDesktop__img {
+        min-width: 768px;
+    }
+
+    .headerDesktop__title {
+        font-size: 1.5rem;
+    }
+
+    .headerDesktop__p {
+        font-size: 16px;
+    }
+
+    .carousel__p {
+        font-size: 1rem;
+    }
+
+    .homeCards__textBox {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .homeCards__title {
+        flex: 1;
+    }
+
+    .homeCards__link {
+        flex: 1;
+        text-align: end;
+    }
+
+    .homeCards__cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .homeCards__cardBox {
+        min-width: 280px;
+    }
+
+    .homeGender__cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .productCard {
+        height: max-content;
+        padding: 24px 0 24px 0;
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+    }
+}
+
+@media (max-width:768px) {
+
+    .footerDesktop {
+        height: 600px;
+    }
+
+    .footerDesktop__section1 {
+        width: 100%;
+        height: 550px;
+        padding: 0;
+        background-color: #161616;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .footerDesktop__textBox1 {
+        flex: none;
+        width: 250px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .footerDesktop__textBox2 {
+        flex: none;
+        width: 250px;
+        height: 150px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .footerDesktop__title2 {
+        padding: 0;
+    }
+
+    .footerDesktop__textBox3 {
+        flex: none;
+        width: 250px;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+    }
+
+    .footerDesktop__iconBox {
+        padding: 0;
+        display: flex;
+        flex-direction: row;
+        gap: 0.5rem;
+    }
+
+    .footerDesktop__section2 {
+        width: 100%;
+        height: 50px;
+    }
+
+    .mainCart__box {
+        padding: 0 30px;
+        text-align: center;
+    }
+
+    .mainCart__title {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width:576px) {
+
+    .homeGender__cardBox {
+        width: 280px;
+        height: 360px;
+    }
+
+    .homeGender__cardLink {
+        height: 280px;
+    }
+
+    .mainForm__box {
+        min-width: 350px;
+    }
+
+    .productCard__carusel {
+        width: 350px;
+        height: 350px;
+    }
+
+    .productCard__cardBox {
+        width: 350px;
+        height: 500px;
+    }
+
+    .productCard__textBox {
+        height: 350px;
+    }
+
+    .productCard__title {
+        font-family: 'Poppins', sans-serif;
+        font-size: 1.5rem;
+        font-weight: 500;
+    }
+
+    .productCard__p {
+        padding: 0 30px;
+        font-size: 1rem;
+    }
+
+    .productCard__price {
+        font-size: 1rem;
+    }
+}
